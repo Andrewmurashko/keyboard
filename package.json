@@ -1,0 +1,19 @@
+{
+    "name": "keyboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "webpack": "webpack --watch",
+        "style": "sass --watch src/sass/style.scss src/sass/style.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Murashko",
+    "license": "ISC",
+    "dependencies": {
+        "webpack": "^5.3.2"
+    },
+    "devDependencies": {
+        "webpack-cli": "^4.1.0"
+    }
+}

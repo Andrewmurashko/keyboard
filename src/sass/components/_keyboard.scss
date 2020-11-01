@@ -1,0 +1,75 @@
+.keyboard {
+  // bottom: calc((100vh - 310px) / 2);
+  // left: calc((100vw - 608px) / 2);
+  position: relative;
+  width: 545px;
+  height: min-content;
+  background-color:yellowgreen;
+  padding: 0px;
+  padding: 45px 10px 10px;
+  border-radius: 6px;
+}
+.keyboard__input{
+  width: 545px;
+  resize: none;
+  padding: 20px;
+  height: 200px;
+  border: solid 2px transparent;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  outline: none;
+}
+button {
+  outline: none;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  width: 33px;
+  height: 33px;
+  border-style: none;
+  border-radius: 2px;
+  margin: 1.5px;
+  cursor: pointer;
+  background-color:yellow;
+  border: solid 2px $color-dark;
+  transition: all 0.3s;
+  &:hover {
+    background-color: white !important;
+    border: solid 2px $color-light;
+  }
+  &:active{
+    border-radius: 15px;
+  }
+}
+.button_colored{
+  background-color: yellowgreen;
+}
+
+button[data="symbol"] {
+  background-color: yellowgreen;
+}
+button[data="space"] {
+  width: 321px;
+}
+button[data="backspace"] {
+  width: 54px;
+  &::before{
+    content: '\21E6';
+  }
+}
+button[data="language"] {
+  width: 54px;
+}
+button[data="enter"] {
+  width: 54px;
+}
+button[data="shift"] {
+  width: 90px;
+}
+
+button[data="lettersOrSymbols"] {
+  width: 90px;
+}
+button[data="caps"] {
+  width: 69px;
+}
